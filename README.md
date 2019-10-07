@@ -20,7 +20,7 @@ The files in this repository are organized into 5 directories and 1 root directo
   * inference to deploy a trained model on unseen raw data - [inference.py](inference.py)
   * save png images for visualization after inference - [save_png.py](save_png.py)
   * train and validate the VS-Net - [vs_net.py](vs_net.py)
-* [common](common) : contains dependant functions used in training or deploying VS-Net and is written by [fastMRI](https://github.com/facebookresearch/fastMRI) with some of my modificatins
+* [common](common) : contains dependant functions used in training or deploying VS-Net and is written by [fastMRI](https://github.com/facebookresearch/fastMRI) with some of our modificatins
 * [data](data) : contains dependant functions used in training or deploying VS-Net and is writen by [fastMRI](https://github.com/facebookresearch/fastMRI)
 * [log](log) : produces `csv` files where the quantitative metrics (PSNR, SSIM and NMSE) over iterations are saved
 * [model](model) : saves trained models. There are 4 pre-trained models that can be used directly to see VS-Net performance.
@@ -31,7 +31,7 @@ The files in this repository are organized into 5 directories and 1 root directo
 To start the training process with [vs_net.py](vs_net.py), please follow the following steps: 
 
 ### 1. Download the knee data
-1 Download all data that we used for our experiments at [GLOBUS](https://app.globus.org/file-manager?origin_id=15c7de28-a76b-11e9-821c-02b7a92d8e58&origin_path=%2F).
+Download the data we used for our experiments at [GLOBUS](https://app.globus.org/file-manager?origin_id=15c7de28-a76b-11e9-821c-02b7a92d8e58&origin_path=%2F).
 
 ### 2. Install python libraries
 ```
@@ -43,7 +43,7 @@ python -m visdom.server
 ```
 ### 4. Run [vs_net.py](vs_net.py)
 
-you need to change the path in this python script to where you save the knee data downloaded above. For visualization during training, open you broswer and enter http://localhost:8907
+you need to change the path in this python script to where you save the knee data downloaded above. For visualization during training, open you broswer and enter http://localhost:8097
 
 
 ## Citation
