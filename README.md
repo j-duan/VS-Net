@@ -12,7 +12,7 @@ The code in this repository implements VS-Net (Fig.1), a model-driven neural net
 :--:
 *Fig.2: Visual comparison using Cartesian undersampling with AF 4 (top) and 6 (bottom). From left to right: zero-filling, l1-SPIRiT, Variational Network, VS-Net and ground truth. Click [here](http://www.cs.bham.ac.uk/~duanj/moive/more_visual_comparison.pdf) for more visual comparison.*
 
-# Overview
+## 1. Overview
 The files in this repository are organized into 5 directories and 1 root directory:
 * root : contains base functions for training, validation, inference and visualizaiton:
   * network architecture, as shown in Fig.1 - [architecture.py](architecture.py)
@@ -27,8 +27,18 @@ The files in this repository are organized into 5 directories and 1 root directo
 * [results](results) : save final results. After inference is run, this folder will produce 3 mat files, i.e. vs-200.mat, zero_filling.mat and reference.mat. On top of the three mat files, running [save_png.py](save_png.py) will produce png files.
 
 
+## 2. run VS-Net
+To start the training process with [vs_net.py](vs_net.py), please follow the following steps: 
 
-To run the code in the [code](code) directory, we provide a [Docker](https://www.docker.com) image with all the necessary dependencies pre-compiled. 
+### Download the knee data
+1 Download all data that we used for our experiments at [GLOBUS](https://app.globus.org/file-manager?origin_id=15c7de28-a76b-11e9-821c-02b7a92d8e58&origin_path=%2F).
+
+### Install python libraries
+```
+pip install visdom torch==1.2.1 matplotlib h5py scipy scikit-image
+```
+### Install python libraries
+
 
 
 
