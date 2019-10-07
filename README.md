@@ -14,7 +14,7 @@ The code in this repository implements VS-Net (Fig.1), a model-driven neural net
 
 # Overview
 The files in this repository are organized into 5 directories and 1 root directory:
-* [root](./) : contains base functions for segmentation, co-registration, mesh generation, and motion tracking:
+* [root](/) : contains base functions for segmentation, co-registration, mesh generation, and motion tracking:
   * code entrance - [code/DMACS.py](code/DMACS.py)
   * deep learning segmentation with the pre-trained model - [code/deepseg.py](code/deepseg.py)
   * co-registration to fit a high-resolution model - [code/p1&2processing.py](demo/p1&2processing.py)
