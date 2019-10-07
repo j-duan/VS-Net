@@ -37,9 +37,13 @@ To start the training process with [vs_net.py](vs_net.py), please follow the fol
 ```
 pip install visdom torch==1.2.1 matplotlib h5py scipy scikit-image
 ```
-### Install python libraries
+### Start visdom 
+```
+python -m visdom.server
+```
+### run [vs_net.py](vs_net.py)
 
-
+you need to change the path in this python script to where you save the knee data downloaded above. 
 
 
 ## 3. Citation
