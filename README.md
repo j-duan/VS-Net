@@ -22,7 +22,10 @@ The files in this repository are organized into 5 directories and 1 root directo
   * train and validate the VS-Net - [vs_net.py](vs_net.py)
 * [common](common) : contains dependant functions used in training or deploying VS-Net and is written by [fastMRI](https://github.com/facebookresearch/fastMRI)
 * [data](data) : contains dependant functions used in training or deploying VS-Net and is writen by [fastMRI](https://github.com/facebookresearch/fastMRI)
-contains a tensorflow model pre-trained on ~400 manual annotations on PH patients
+* [log](log) : produces `csv` files where the quantitative metrics (PSNR, SSIM and NMSE) over iterations are saved
+* [model](model) : saves trained models. There are 4 pre-trained models that can be used directly to see VS-Net performance.
+* [results](results) : save final results. After inference is run, this folder will produce 3 mat files, i.e. vs-200.mat, zero_filling.mat and reference.mat. On top of the three mat files, running [save_png.py](save_png.py) will produce png files.
+
 
 
 To run the code in the [code](code) directory, we provide a [Docker](https://www.docker.com) image with all the necessary dependencies pre-compiled. 
