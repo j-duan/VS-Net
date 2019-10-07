@@ -5,7 +5,7 @@ The code in this repository implements VS-Net, a model-driven neural network for
 
 ![](results/compare.png)
 :--:
-*Motion tracking using our pipeline. Left: without shape refinement; Right: with shape refinement*
+*Visual comparison of results obtained by different methods for Cartesian undersampling with AF 4 (top) and 6 (bottom). From left to right: zero-filling results, $\ell1$-SPIRiT results, VN results, VS-Net results, and ground truth. Click \href{http://www.cs.bham.ac.uk/~duanj/moive/more_visual_comparison.pdf}{here} for more visual comparison.*
 
 # Overview
 The files in this repository are organized into 3 directories:
