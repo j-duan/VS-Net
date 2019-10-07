@@ -22,7 +22,7 @@ The files in this repository are organized into 5 directories and 1 root directo
   * train and validate the VS-Net - [vs_net.py](vs_net.py)
 * [common](common) : contains dependant functions used in training or deploying VS-Net and is written by [fastMRI](https://github.com/facebookresearch/fastMRI) with some of our modificatins
 * [data](data) : contains dependant functions used in training or deploying VS-Net and is writen by [fastMRI](https://github.com/facebookresearch/fastMRI)
-* [log](log) : produces `csv` files where the quantitative metrics (PSNR, SSIM and NMSE) over iterations are saved
+* [log](log) : produces `csv` files where the quantitative metrics (PSNR, SSIM and NMSE) over each iteration are saved
 * [model](model) : saves trained models. There are 4 pre-trained models that can be used directly to see VS-Net performance.
 * [results](results) : save final results. After inference is run, this folder will produce 3 mat files, i.e. vs-200.mat, zero_filling.mat and reference.mat. On top of the three mat files, running [save_png.py](save_png.py) will produce png files.
 
@@ -49,6 +49,6 @@ you need to change the path in this python script to where you save the knee dat
 ## Citation
 If you find this software useful for your project or research. Please give some credits to authors who developed it by citing some of the following papers. We really appreciate that. 
 
-[1] Duan J, Schlemper J, Qin C, Ouyang C, Bai W, Biffi C, Bello G, Statton B, O'Regan DP, Rueckert D. VS-Net: Variable splitting network for accelerated parallel MRI reconstruction. arXiv preprint arXiv:1907.10033. *MICCAI* (2019). 
+[1] Duan J, Schlemper J, Qin C, Ouyang C, Bai W, Biffi C, Bello G, Statton B, O'Regan DP, Rueckert D. VS-Net: Variable splitting network for accelerated parallel MRI reconstruction. arXiv preprint arXiv:1907.10033. *[MICCAI](https://www.miccai2019.org/programme/oral-sessions-tentative/)* (2019). 
 
 [2] Bello GA, Dawes TJW, Duan J, Biffi C, de Marvao A, Howard LSGE, Gibbs JSR, Wilkins MR, Cook SA, Rueckert D, O'Regan DP. Deep learning cardiac motion analysis for human survival prediction. *[Nature Machine Intelligence](https://doi.org/10.1038/s42256-019-0019-2)* 1, 95–104 (2019).
