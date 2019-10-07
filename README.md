@@ -13,8 +13,8 @@ The code in this repository implements VS-Net (Fig.1), a model-driven neural net
 *Fig.2: Visual comparison using Cartesian undersampling with AF 4 (top) and 6 (bottom). From left to right: zero-filling, l1-SPIRiT, Variational Network, VS-Net and ground truth. Click [here](http://www.cs.bham.ac.uk/~duanj/moive/more_visual_comparison.pdf) for more visual comparison.*
 
 # Overview
-The files in this repository are organized into 3 directories:
-* [code](code) : contains base functions for segmentation, co-registration, mesh generation, and motion tracking:
+The files in this repository are organized into 5 directories and 1 root directory:
+* [root](./) : contains base functions for segmentation, co-registration, mesh generation, and motion tracking:
   * code entrance - [code/DMACS.py](code/DMACS.py)
   * deep learning segmentation with the pre-trained model - [code/deepseg.py](code/deepseg.py)
   * co-registration to fit a high-resolution model - [code/p1&2processing.py](demo/p1&2processing.py)
