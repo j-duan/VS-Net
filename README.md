@@ -12,7 +12,7 @@ The code in this repository implements VS-Net (Fig.1), a model-driven neural net
 :--:
 *Fig.2: Visual comparison using Cartesian undersampling with AF 4 (top) and 6 (bottom). From left to right: zero-filling, l1-SPIRiT, Variational Network, VS-Net and ground truth. Click [here](http://www.cs.bham.ac.uk/~duanj/moive/more_visual_comparison.pdf) for more visual comparison.*
 
-## 1. Overview
+## Overview
 The files in this repository are organized into 5 directories and 1 root directory:
 * root : contains base functions for training, validation, inference and visualizaiton:
   * network architecture, as shown in Fig.1 - [architecture.py](architecture.py)
@@ -27,26 +27,26 @@ The files in this repository are organized into 5 directories and 1 root directo
 * [results](results) : save final results. After inference is run, this folder will produce 3 mat files, i.e. vs-200.mat, zero_filling.mat and reference.mat. On top of the three mat files, running [save_png.py](save_png.py) will produce png files.
 
 
-## 2. run VS-Net
+## Run VS-Net
 To start the training process with [vs_net.py](vs_net.py), please follow the following steps: 
 
-### Download the knee data
+### 1. Download the knee data
 1 Download all data that we used for our experiments at [GLOBUS](https://app.globus.org/file-manager?origin_id=15c7de28-a76b-11e9-821c-02b7a92d8e58&origin_path=%2F).
 
-### Install python libraries
+### 2. Install python libraries
 ```
 pip install visdom torch==1.2.1 matplotlib h5py scipy scikit-image
 ```
-### Start visdom 
+### 3. Start visdom 
 ```
 python -m visdom.server
 ```
-### run [vs_net.py](vs_net.py)
+### 4. Run [vs_net.py](vs_net.py)
 
-you need to change the path in this python script to where you save the knee data downloaded above. 
+you need to change the path in this python script to where you save the knee data downloaded above. For visualization during training, open you broswer and enter http://localhost:8907
 
 
-## 3. Citation
+## Citation
 If you find this software useful for your project or research. Please give some credits to authors who developed it by citing some of the following papers. We really appreciate that. 
 
 [1] Duan J, Schlemper J, Qin C, Ouyang C, Bai W, Biffi C, Bello G, Statton B, O'Regan DP, Rueckert D. VS-Net: Variable splitting network for accelerated parallel MRI reconstruction. arXiv preprint arXiv:1907.10033. *MICCAI* (2019). 
