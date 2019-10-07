@@ -14,17 +14,17 @@ The code in this repository implements VS-Net (Fig.1), a model-driven neural net
 
 ## Overview
 The files in this repository are organized into 5 directories and 1 root directory:
-* root : contains base functions for training, validation, inference and visualizaiton:
+* root : contains base functions for training, validation, inference and visualization:
   * network architecture, as shown in Fig.1 - [architecture.py](architecture.py)
   * data loader to read complex-valued raw MRI data and sensitivity maps - [data_loader.py](data_loader.py)
   * inference to deploy a trained model on unseen raw data - [inference.py](inference.py)
   * save png images for visualization after inference - [save_png.py](save_png.py)
   * train and validate the VS-Net - [vs_net.py](vs_net.py)
 * [common](common) : contains dependant functions used in training or deploying VS-Net and is written by [fastMRI](https://github.com/facebookresearch/fastMRI) with some of our modificatins
-* [data](data) : contains dependant functions used in training or deploying VS-Net and is writen by [fastMRI](https://github.com/facebookresearch/fastMRI)
+* [data](data) : contains dependant functions used in training or deploying VS-Net and is written by [fastMRI](https://github.com/facebookresearch/fastMRI)
 * [log](log) : produces `csv` files where the quantitative metrics (PSNR, SSIM and NMSE) over each iteration are saved
 * [model](model) : saves trained models. There are 4 pre-trained models that can be used directly to see VS-Net performance.
-* [results](results) : save final results. After inference is run, this folder will produce 3 mat files, i.e. vs-200.mat, zero_filling.mat and reference.mat. On top of the three mat files, running [save_png.py](save_png.py) will produce png files.
+* [results](results) : save final results. After inference is run, this folder will produce 3 mat files, i.e. `vs-200.mat`, `zero_filling.mat` and `reference.mat`. On top of the three mat files, running [save_png.py](save_png.py) will produce png files.
 
 
 ## Run VS-Net
@@ -43,10 +43,10 @@ python -m visdom.server
 ```
 ### 4. Run [vs_net.py](vs_net.py)
 
-you need to change the path in this python script to where you save the knee data downloaded above. For visualization during training, open you broswer and enter http://localhost:8097
+you need to change the path in this python script to where you save the knee data downloaded above. For visualization during training, open your browser and enter http://localhost:8097
 
 
 ## Citation
-If you find this software useful for your project or research. Please give some credits to authors who developed it by citing some of the following papers. We really appreciate that. If you encounter any problem during installiation, please contact <j.duan@bham.ac.uk>
+If you find this software useful for your project or research. Please give some credits to authors who developed it by citing some of the following papers. We really appreciate that. If you encounter any problem during installation, please contact <j.duan@bham.ac.uk>
 
-[1] Duan J, Schlemper J, Qin C, Ouyang C, Bai W, Biffi C, Bello G, Statton B, O'Regan DP, Rueckert D. VS-Net: Variable splitting network for accelerated parallel MRI reconstruction. arXiv preprint arXiv:1907.10033. *[MICCAI](https://www.miccai2019.org/programme/oral-sessions-tentative/)* (2019). 
+[1] Duan J, Schlemper J, Qin C, Ouyang C, Bai W, Biffi C, Bello G, Statton B, O'Regan DP, Rueckert D. VS-Net: Variable splitting network for accelerated parallel MRI reconstruction. arXiv preprint arXiv:1907.10033. *[MICCAI](https://www.miccai2019.org/programme/oral-sessions-tentative/)* (2019).
