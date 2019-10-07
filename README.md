@@ -47,8 +47,6 @@ you need to change the path in this python script to where you save the knee dat
 
 
 ## Citation
-If you find this software useful for your project or research. Please give some credits to authors who developed it by citing some of the following papers. We really appreciate that. 
+If you find this software useful for your project or research. Please give some credits to authors who developed it by citing some of the following papers. We really appreciate that. If you encounter any problem during installiation, please contact `j.duan@bham.ac.uk`
 
 [1] Duan J, Schlemper J, Qin C, Ouyang C, Bai W, Biffi C, Bello G, Statton B, O'Regan DP, Rueckert D. VS-Net: Variable splitting network for accelerated parallel MRI reconstruction. arXiv preprint arXiv:1907.10033. *[MICCAI](https://www.miccai2019.org/programme/oral-sessions-tentative/)* (2019). 
-
-[2] Bello GA, Dawes TJW, Duan J, Biffi C, de Marvao A, Howard LSGE, Gibbs JSR, Wilkins MR, Cook SA, Rueckert D, O'Regan DP. Deep learning cardiac motion analysis for human survival prediction. *[Nature Machine Intelligence](https://doi.org/10.1038/s42256-019-0019-2)* 1, 95–104 (2019).
