@@ -1,6 +1,8 @@
 # VS-Net: Variable splitting network for accelerated parallel MRI reconstruction 
 
-
+\begin{center} <br>
+\includegraphics[width=8in]{results/overall.pdf} <br>
+\end{center}
 
 ![Image Title](results/overall.pdf){width=75%}.
 
