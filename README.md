@@ -4,7 +4,7 @@ The code in this repository implements VS-Net (Fig.1), a model-driven neural net
 
 
 
-![](results/network.png) 
+![](results/VS-Net.png) 
 :--:
 *Fig.1: VS-Net overall architecture (left) and each block in VS-net (right). DB, DCB and WAB stand for Denoiser Block, Data Consistency Block and Weighted Average Block, respectively.* 
 
