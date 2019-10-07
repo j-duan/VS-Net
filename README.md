@@ -28,7 +28,7 @@ The files in this repository are organized into 5 directories and 1 root directo
 
 
 ## Run VS-Net
-To start the training process with [vs_net.py](vs_net.py), please follow the following steps: 
+To start the training process with [vs_net.py](vs_net.py), please follow the following four steps: 
 
 ### 1. Download the knee data
 Download the data we used for our experiments at [GLOBUS](https://app.globus.org/file-manager?origin_id=15c7de28-a76b-11e9-821c-02b7a92d8e58&origin_path=%2F).
