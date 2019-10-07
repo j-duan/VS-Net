@@ -1,15 +1,15 @@
 # VS-Net: Variable splitting network for accelerated parallel MRI reconstruction 
 
-The code in this repository implements VS-Net, a model-driven neural network for accelerated parallel MRI reconstruction. Specifically, we formulate the generalized parallel compressed sensing reconstruction as an energy minimization problem, for which a variable splitting optimization method is derived. Based on this formulation we propose a novel, end-to-end trainable deep neural network architecture by unrolling the resulting iterative process of such variable splitting scheme. We evaluated VS-Net on complex valued multi-coil knee images for 4-fold and 6-fold acceleration factors.
+The code in this repository implements VS-Net (Fig.1), a model-driven neural network for accelerated parallel MRI reconstruction. Specifically, we formulate the generalized parallel compressed sensing reconstruction as an energy minimization problem, for which a variable splitting optimization method is derived. Based on this formulation we propose a novel, end-to-end trainable deep neural network architecture by unrolling the resulting iterative process of such variable splitting scheme. We evaluated VS-Net on complex valued multi-coil knee images for 4-fold and 6-fold acceleration factors (Fig.2).
 
 ![](results/overall.png)
 :--:
 ![](results/blocks.png)
-*VS-Net overall architecture (top) and each block in VS-net (bottom). DB, DCB and WAB stand for Denoiser Block, Data Consistency Block and Weighted Average Block, respectively.* 
+*Fig.1: VS-Net overall architecture (top) and each block in VS-net (bottom). DB, DCB and WAB stand for Denoiser Block, Data Consistency Block and Weighted Average Block, respectively.* 
 
 ![](results/compare.png)
 :--:
-*Visual comparison using Cartesian undersampling with AF 4 (top) and 6 (bottom). From left to right: zero-filling, l1-SPIRiT, Variational Network, VS-Net and ground truth. Click [here](http://www.cs.bham.ac.uk/~duanj/moive/more_visual_comparison.pdf) for more visual comparison.*
+*Fig.2: Visual comparison using Cartesian undersampling with AF 4 (top) and 6 (bottom). From left to right: zero-filling, l1-SPIRiT, Variational Network, VS-Net and ground truth. Click [here](http://www.cs.bham.ac.uk/~duanj/moive/more_visual_comparison.pdf) for more visual comparison.*
 
 # Overview
 The files in this repository are organized into 3 directories:
