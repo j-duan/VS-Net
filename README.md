@@ -2,8 +2,6 @@
 
 The code in this repository implements VS-Net (Fig.1), a model-driven neural network for accelerated parallel MRI reconstruction. Specifically, we formulate the generalized parallel compressed sensing reconstruction as an energy minimization problem, for which a variable splitting optimization method is derived. Based on this formulation we propose a novel, end-to-end trainable deep neural network architecture by unrolling the resulting iterative process of such variable splitting scheme. We evaluated VS-Net on complex valued multi-coil knee images for 4-fold and 6-fold acceleration factors showed improved performance (Fig.2).
 
-
-
 ![](results/VS-Net.png) 
 :--:
 *Fig.1: VS-Net overall architecture (left) and each block in VS-net (right). DB, DCB and WAB stand for Denoiser Block, Data Consistency Block and Weighted Average Block, respectively.* 
